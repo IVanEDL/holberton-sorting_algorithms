@@ -7,7 +7,7 @@
 
 void bubble_sort(int *array, size_t size)
 {
-	int counter1 = 0, counter2, temp;
+	size_t counter1 = 0, counter2, temp;
 
 	if (!array || size <= 0)
 		return;
@@ -24,3 +24,4 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 	}
+}
