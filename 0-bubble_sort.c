@@ -1,8 +1,9 @@
 #include "sort.h"
 
 /**
- *
- *
+ * bubble_sort: sorts an array in the bubbly way ahuevo.
+ * @array: Received array
+ * @size: size of the array
  */
 
 void bubble_sort(int *array, size_t size)
@@ -21,6 +22,7 @@ void bubble_sort(int *array, size_t size)
 				temp = array[counter2];
 				array[counter2] = array[counter2 + 1];
 				array[counter2 + 1] = temp;
+				print_array(array, size);
 			}
 		}
 	}
