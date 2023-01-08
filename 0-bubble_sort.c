@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
- * bubble_sort: sorts an array in the bubbly way ahuevo.
+ * bubble_sort - sorts an array in the bubbly way ahuevo.
  * @array: Received array
  * @size: size of the array
  */
