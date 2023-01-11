@@ -6,7 +6,7 @@
  */
 void selection_sort(int *arr, size_t size)
 {
-	size_t i, j, aux;
+	size_t i, j = 0, aux;
 	int temp;
 
 	if (arr == NULL)
@@ -15,7 +15,7 @@ void selection_sort(int *arr, size_t size)
 	for (i = 0; i < size -1; i++)
 	{
 		aux = i;
-		for (i = 0; i < size - 1; i++)
+		for (j = i + 1; j < size; j++)
 		{
 			if (arr[j] < arr[aux])
 			{
