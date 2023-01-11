@@ -1,7 +1,7 @@
 #include "sort.h"
 
-/*
- * quick_sort - orders an array, quickly
+/**
+ * quick_sort - initialices the function
  * @array: received array
  * @size: size of the array
  */
@@ -12,8 +12,9 @@ void quick_sort(int *array, size_t size)
 		quicksort_recursion(&array, 0, size - 1, size);
 }
 
-/*
- * swap - swaps elements of an array
+/**
+ * swaper - swaps elements in an array
+ * @array: an array
  * @i: first element
  * @a: second element
  * @size: size of the array
@@ -29,11 +30,12 @@ void swaper(int *array, size_t i, size_t a, size_t size)
 	print_array(array, size);
 }
 
-/*
- * quicksort_recursion - truly orders an array
+/**
+ * quicksort_recursion - sorts an array by recursion
  * @array: array
  * @low: low
  * @high: high
+ * @size: size of the array
  */
 
 void quicksort_recursion(int **array, size_t low, size_t high, size_t size)
@@ -52,8 +54,8 @@ void quicksort_recursion(int **array, size_t low, size_t high, size_t size)
 	}
 }
 
-/*
- * partition - does the windy thing
+/**
+ * partition - partitionates pasionally or smth
  * @array: array to partitionate
  * @low: atl
  * @high: PB
@@ -78,7 +80,7 @@ size_t partition(int *array, size_t low, size_t high, size_t size)
 			eq++;
 	}
 	if (eq == size - 1)
-		return - 1;
+		return (-1);
 	if (array[high] != array[a + 1])
 		swaper(array, high, a + 1, size);
 	return (a + 1);
